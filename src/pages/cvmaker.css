@@ -216,3 +216,6 @@ button:hover{
         margin-bottom: 2rem;
      }
  }
+ .displayEduDetails, .displayExpDetails, .displayProjects{
+    white-space: pre-wrap;
+ }
