@@ -1,0 +1,49 @@
+footer{
+    background-color: blue;
+    color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0.5rem 20rem;
+    font-size: 1.5rem;
+    height: 5rem;
+    margin-top: 3rem;
+    font-family: "Tagesschrift", system-ui;
+}
+.cell{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+ 
+}
+.address{
+    justify-content: center;
+}
+.contact{
+    justify-content: center;
+}
+.icon{
+    font-size: 2rem;
+    display: flex;
+
+}
+@media screen and (max-width:700px) {
+    footer{
+        padding: 0;
+        margin-bottom: 0;
+          min-width: 100vw;
+          overflow: hidden;
+          font-size: 0.2rem;
+    }
+    footer p{
+        font-size: 1.2rem;
+    }
+    footer .icon{
+        font-size: 1.5rem;
+    }
+    
+     .cell{
+        gap: 0px;
+     }   
+     
+}

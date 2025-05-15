@@ -1,0 +1,113 @@
+header{
+    display: flex;
+    height: 8rem;
+ 
+    padding: 0 20rem;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Tagesschrift", system-ui;
+
+
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 4.5rem;
+    align-items: center;
+}
+h1{
+    font-family: "Tagesschrift", system-ui;
+
+}
+h1 span{
+    color: blue;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+.navbar{
+    text-decoration: none;
+    color:black;
+    position: relative;
+
+}
+.navbar::after{
+    height: 10%;
+    width: 0%;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background-color: blue;
+    transition: width 0.2s ease-in-out;
+  
+
+}
+.navbar:hover{
+    color: blue;
+}
+.navbar:hover::after{
+    width: 100%;
+}
+.hamitems{
+    height: 0.5rem;
+    width: 3rem;
+    background-color: black;
+    margin-bottom: 0.5rem;
+    
+}
+.hamburger{
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    header{
+        padding: 0rem;
+        max-width: 100vw;
+    }
+    nav {
+          position: absolute;
+          z-index: 1;
+          background-color: blue;
+        left: -100vw;
+        top: 20vw;
+           width: 100vw;
+             padding: 3rem;
+          transition: all 0.3s ease-in-out;
+          border-bottom-right-radius: 50px;
+      
+
+         
+          
+    }
+    .show{
+        left: 0;
+        
+    }
+    .show a{
+        color:white;
+    }
+     .show a:hover{
+        color: white;
+     }
+     .navbar:hover::after{
+        background-color: white;
+      
+     }
+    
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        padding: 1.5rem;
+        padding-top: 2rem;
+    }
+    .hamburger{
+        display: block;
+        padding: 1.5rem;
+    }
+    
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main{
+  flex: 1;
+}
+
+
+html{
+  font-size: 62.5%;
+
+}
+.about{
+  font-size: 2rem;
+  padding: 2rem 20rem ;
+  min-height: 36rem;
+  text-align: center;
+  font-family: "Tagesschrift", system-ui;
+}
+.about h2{
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.about p{
+  width: 80%;
+  margin: auto;
+  line-height: 3rem;
+  font-size: 2rem;
+}
+@media screen and (max-width:700px) {
+  .about{
+    padding: 0.5rem;
+  }
+  
+}
+@media screen  and (min-width:1450px){
+  html{
+    font-size: 75%;
+  }
+  
+}
